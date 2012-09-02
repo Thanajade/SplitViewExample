@@ -1,5 +1,5 @@
 //
-//  PSViewController.h
+//  PSCountryViewController.h
 //  SplitViewExample
 //
 //  Created by Pornjed Sakgitjarung on 9/2/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PSViewController : UIViewController
+@interface PSCountryViewController : UISplitViewController
 
 @end

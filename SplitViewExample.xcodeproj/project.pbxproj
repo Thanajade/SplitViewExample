@@ -14,7 +14,9 @@
 		C4EFC98515F317B200C34B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC98415F317B200C34B3C /* main.m */; };
 		C4EFC98915F317B200C34B3C /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC98815F317B200C34B3C /* PSAppDelegate.m */; };
 		C4EFC98C15F317B200C34B3C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EFC98A15F317B200C34B3C /* MainStoryboard.storyboard */; };
-		C4EFC98F15F317B200C34B3C /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC98E15F317B200C34B3C /* PSViewController.m */; };
+		C4EFC99715F3180A00C34B3C /* PSLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC99615F3180A00C34B3C /* PSLeftViewController.m */; };
+		C4EFC99A15F3181D00C34B3C /* PSRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC99915F3181D00C34B3C /* PSRightViewController.m */; };
+		C4EFC99D15F3183000C34B3C /* PSCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFC99C15F3183000C34B3C /* PSCountryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,12 @@
 		C4EFC98715F317B200C34B3C /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
 		C4EFC98815F317B200C34B3C /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
 		C4EFC98B15F317B200C34B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C4EFC98D15F317B200C34B3C /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
-		C4EFC98E15F317B200C34B3C /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		C4EFC99515F3180A00C34B3C /* PSLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLeftViewController.h; sourceTree = "<group>"; };
+		C4EFC99615F3180A00C34B3C /* PSLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLeftViewController.m; sourceTree = "<group>"; };
+		C4EFC99815F3181D00C34B3C /* PSRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRightViewController.h; sourceTree = "<group>"; };
+		C4EFC99915F3181D00C34B3C /* PSRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRightViewController.m; sourceTree = "<group>"; };
+		C4EFC99B15F3183000C34B3C /* PSCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCountryViewController.h; sourceTree = "<group>"; };
+		C4EFC99C15F3183000C34B3C /* PSCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCountryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,13 @@
 				C4EFC98715F317B200C34B3C /* PSAppDelegate.h */,
 				C4EFC98815F317B200C34B3C /* PSAppDelegate.m */,
 				C4EFC98A15F317B200C34B3C /* MainStoryboard.storyboard */,
-				C4EFC98D15F317B200C34B3C /* PSViewController.h */,
-				C4EFC98E15F317B200C34B3C /* PSViewController.m */,
 				C4EFC97F15F317B200C34B3C /* Supporting Files */,
+				C4EFC99515F3180A00C34B3C /* PSLeftViewController.h */,
+				C4EFC99615F3180A00C34B3C /* PSLeftViewController.m */,
+				C4EFC99815F3181D00C34B3C /* PSRightViewController.h */,
+				C4EFC99915F3181D00C34B3C /* PSRightViewController.m */,
+				C4EFC99B15F3183000C34B3C /* PSCountryViewController.h */,
+				C4EFC99C15F3183000C34B3C /* PSCountryViewController.m */,
 			);
 			path = SplitViewExample;
 			sourceTree = "<group>";
@@ -164,7 +174,9 @@
 			files = (
 				C4EFC98515F317B200C34B3C /* main.m in Sources */,
 				C4EFC98915F317B200C34B3C /* PSAppDelegate.m in Sources */,
-				C4EFC98F15F317B200C34B3C /* PSViewController.m in Sources */,
+				C4EFC99715F3180A00C34B3C /* PSLeftViewController.m in Sources */,
+				C4EFC99A15F3181D00C34B3C /* PSRightViewController.m in Sources */,
+				C4EFC99D15F3183000C34B3C /* PSCountryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
