@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    PSRightViewController *rightVC = [self.viewControllers objectAtIndex:1];
+    self.delegate = rightVC;
 }
 
 - (void)viewDidUnload

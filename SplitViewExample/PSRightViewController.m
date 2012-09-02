@@ -45,6 +45,30 @@
 -(void)leftView:(PSLeftViewController *)vc didSelectCountry:(NSString *)countryName
 {
     [self.label setText:countryName];
+    if(self.popOver)
+    {
+        [self.popOver dismissPopoverAnimated:YES];
+    }
+}
+
+-(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    barButtonItem.title = @"Countries";
+    NSMutableArray *items = [self.toolbar.items mutableCopy];
+    [items insertObject:barButtonItem atIndex:0];
+    [self.toolbar setItems:items animated:YES];
+    self.popOver = pc;
+}
+
+-(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    NSMutableArray *items = [self.toolbar.items mutableCopy];
+    if([items count] > 0)
+    {
+        [items removeObjectAtIndex:0];
+    }
+    [self.toolbar setItems:items animated:YES];
+    self.popOver = nil;
 }
 
 @end

@@ -12,5 +12,7 @@
 @interface PSRightViewController : UIViewController <LeftViewDelegate, UISplitViewControllerDelegate>
 
 @property (nonatomic, retain) IBOutlet UILabel *label;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
+@property (nonatomic, retain) UIPopoverController *popOver;
 
 @end
